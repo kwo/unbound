@@ -24,8 +24,13 @@ Upstream DNS: 127.0.0.1#5353
 
 ## Build
 
-```bash
-docker build --build-arg UID=1001 --build-arg GID=1001 .
+```sh
+docker build -t unbound --build-arg UID=1001 --build-arg GID=1001 .
+```
+
+## Run
+```sh
+docker run -ti --rm unbound sh
 ```
 
 ## Deployment
@@ -41,4 +46,3 @@ containers:
 ```
 
 Both containers share the same network namespace, allowing Pi-hole to access Unbound on localhost.
-
