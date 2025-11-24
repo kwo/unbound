@@ -25,7 +25,7 @@ Upstream DNS: 127.0.0.1#5353
 ## Build
 
 ```sh
-docker build -t unbound --build-arg UID=1001 --build-arg GID=1001 .
+docker build -t unbound --build-arg UID=110 --build-arg GID=111 .
 ```
 
 ## Run
